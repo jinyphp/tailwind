@@ -39,15 +39,21 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         */
 
         // 컴포넌트 선언
+        $this->button(); // 버튼
 
-        // 버튼
-        Blade::component($this->vendor."-".$this->package.'::components.buttons.basic', 'button');
 
     }
 
     public function register()
     {
 
+    }
+
+    private function button()
+    {
+        Blade::component($this->vendor."-".$this->package.'::components.buttons.button', 'button');
+        Blade::component($this->vendor."-".$this->package.'::components.buttons.button-light', 'button-light');
+        Blade::component($this->vendor."-".$this->package.'::components.buttons.button-outline', 'button-outline');
     }
 
 }
