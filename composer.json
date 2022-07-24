@@ -1,0 +1,36 @@
+{
+    "name": "jiny/ui-tailwind",
+    "description": "tailwind ui component for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hojinlee",
+            "email": "infohojin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jiny\\UI\\Tailwind\\":"src/"
+        },
+        "files" : [
+            "src/Helpers/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jiny\\UI\\Tailwind\\Tests\\": "test/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiny\\UI\\Tailwind\\JinyUITailwindServiceProvider"
+            ]
+        }
+    }
+}
