@@ -20,12 +20,12 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // 뷰 리소스
-        $this->loadViewsFrom(__DIR__.'/../resources/views', $this->$vendor."-".$this->package);
+        $this->loadViewsFrom(__DIR__.'/../resources/views', $this->vendor."-".$this->package);
         
         // 리소스배포
         // php artisan vendor:publish
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/'.$this->$vendor."/".$this->package),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/'.$this->vendor."/".$this->package),
         ]);
 
 

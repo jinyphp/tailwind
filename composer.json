@@ -1,5 +1,5 @@
 {
-    "name": "jiny/ui-tailwind",
+    "name": "jiny/tailwind",
     "description": "tailwind ui component for laravel",
     "type": "library",
     "license": "MIT",
