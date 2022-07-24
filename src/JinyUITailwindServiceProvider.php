@@ -21,7 +21,7 @@ class JinyUITailwindServiceProvider extends ServiceProvider
 
         // 뷰 리소스
         $this->loadViewsFrom(__DIR__.'/../resources/views', $this->vendor."-".$this->package);
-        
+
         // 리소스배포
         // php artisan vendor:publish
         $this->publishes([
@@ -29,7 +29,7 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         ]);
 
 
-        
+
 
         // $this->loadTranslationsFrom(__DIR__.'/../lang', 'ui-tailwind');
         /*
@@ -39,7 +39,9 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         */
 
         // 컴포넌트 선언
-        //Blade::component($this->package.'::components.alert.primary', 'alert-primary');
+
+        // 버튼
+        Blade::component($this->vendor."-".$this->package.'::components.buttons.basic', 'button');
 
     }
 
