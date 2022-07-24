@@ -1,0 +1,1 @@
+<h1>Hello jiny ui for tailwind</h1>
