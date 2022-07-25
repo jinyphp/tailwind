@@ -50,14 +50,14 @@ class JinyUITailwindServiceProvider extends ServiceProvider
     private function button()
     {
         Blade::component($this->vendor."_".$this->package.'::components.buttons.button', 'button');
-        Blade::component($this->vendor."_".$this->package.'::components.buttons.button-light', 'button-light');
-        Blade::component($this->vendor."_".$this->package.'::components.buttons.button-outline', 'button-outline');
+        Blade::component($this->vendor."_".$this->package.'::components.buttons.button_light', 'button-light');
+        Blade::component($this->vendor."_".$this->package.'::components.buttons.button_outline', 'button-outline');
     }
 
     private function badge()
     {
         Blade::component($this->vendor."_".$this->package.'::components.badges.badge', 'badge');
-        Blade::component($this->vendor."_".$this->package.'::components.badges.badge-pill', 'badge-pill');
+        Blade::component($this->vendor."_".$this->package.'::components.badges.badge_pill', 'badge-pill');
     }
 
     private function table()
@@ -65,9 +65,9 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         Blade::component($this->vendor."_".$this->package.'::components.tables.table', 'table');
         Blade::component($this->vendor."_".$this->package.'::components.tables.tr', 'tr');
         Blade::component($this->vendor."_".$this->package.'::components.tables.th', 'th');
-        Blade::component($this->vendor."_".$this->package.'::components.tables.th-center', 'th-center');
+        Blade::component($this->vendor."_".$this->package.'::components.tables.th_center', 'th-center');
         Blade::component($this->vendor."_".$this->package.'::components.tables.td', 'td');
-        Blade::component($this->vendor."_".$this->package.'::components.tables.td-center', 'td-center');
+        Blade::component($this->vendor."_".$this->package.'::components.tables.td_center', 'td-center');
     }
 
 }
