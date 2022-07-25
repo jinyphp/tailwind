@@ -29,15 +29,6 @@ class JinyUITailwindServiceProvider extends ServiceProvider
         ]);
 
 
-
-
-        // $this->loadTranslationsFrom(__DIR__.'/../lang', 'ui-tailwind');
-        /*
-        $this->publishes([
-            __DIR__.'/../config/jiny/tailwind.php' => config_path('jinytailwind.php'),
-        ]);
-        */
-
         // 컴포넌트 선언
         $this->avatars();
         $this->button(); // 버튼
