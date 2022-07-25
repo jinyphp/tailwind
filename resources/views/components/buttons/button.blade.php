@@ -4,7 +4,7 @@
     // 버튼 사이즈
     if(isset($attributes['size'])) {
         switch($attributes['size']) {
-            case 'sm':
+            case 'xs':
                 $attributes['class'] .= " px-2 py-1 leading-5 text-sm";
                 break;
             case 'small':

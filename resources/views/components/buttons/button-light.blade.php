@@ -1,10 +1,10 @@
 @php
-    $attributes['class'] ="inline-flex justify-center items-center space-x-2 rounded border font-semibold focus:outline-none";
+    $attributes['class'] = "inline-flex justify-center items-center space-x-2 rounded border font-semibold focus:outline-none";
 
     // 버튼 사이즈
     if(isset($attributes['size'])) {
         switch($attributes['size']) {
-            case 'sm':
+            case 'xs':
                 $attributes['class'] .= " px-2 py-1 leading-5 text-sm";
                 break;
             case 'small':
